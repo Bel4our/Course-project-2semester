@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flats>
+    <flat>
+        <address>no-info</address>
+        <price>201 670</price>
+        <rooms>2</rooms>
+        <area>45</area>
+        <floor>6/6</floor>
+        <description>no-info</description>
+        <background>../img/flat4.jpg</background>
+    </flat>
+    <flat>
+        <address>no-info</address>
+        <price>173 998</price>
+        <rooms>2</rooms>
+        <area>38</area>
+        <floor>3/8</floor>
+        <description>no-info</description>
+        <background>../img/flat5.jpeg</background>
+    </flat>
+    <flat>
+        <address>no-info</address>
+        <price>333 030</price>
+        <rooms>3</rooms>
+        <area>68</area>
+        <floor>7/10</floor>
+        <description>no-info</description>
+        <background>../img/flat6.jpg</background>
+    </flat>
+</flats>

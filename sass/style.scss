@@ -1,0 +1,44 @@
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #0075FF;
+  
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+
+* {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+  text-decoration: none;  
+  box-sizing: border-box;
+  font-family: lato;  
+}   
+
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'main-services';
+@import 'catalog';
+@import 'about';
+
+@font-face {
+  font-family: lato;
+  src: url(../fonts/Lato-Regular.ttf);
+} 
+
+@font-face { 
+  font-family: spectral sc;
+  src: url(../fonts/SpectralSC-Regular.ttf);
+}   

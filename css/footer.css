@@ -1,0 +1,34 @@
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  background: url(../img/footer.png) no-repeat top center;
+  background-size: cover;
+}
+footer .footer-description {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1vw;
+  color: white;
+  width: 60%;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    height: 120px;
+  }
+  footer .footer-description {
+    font-size: 1.8vw;
+    line-height: 120%;
+  }
+}
+@media screen and (max-width: 450px) {
+  footer {
+    height: 80px;
+  }
+  footer .footer-description {
+    line-height: 150%;
+    font-size: 2.2vw;
+  }
+}

@@ -1,0 +1,1271 @@
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #0075FF;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: lato;
+}
+
+header {
+  border-bottom: white 1px solid;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8vw;
+  padding: 0 100px;
+}
+
+.not-main {
+  background: url(../img/not-main-header.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.logo > img {
+  width: 30vw;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav {
+  order: 1;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  font-size: 24px;
+  padding: 10px 10px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 1vw;
+}
+
+nav ul li a:hover {
+  color: black;
+  background: white;
+}
+
+nav ul li a.active {
+  color: black;
+  background: white;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100px;
+    padding: 0 20px;
+  }
+  .logo {
+    padding: 0px;
+    width: 40%;
+  }
+  .logo > img {
+    width: 35vw;
+  }
+  nav ul li a {
+    font-size: 3vw;
+    padding: 10px 0.5vw;
+    margin: 0 0.5vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logo {
+    width: 65%;
+    height: 40px;
+  }
+  .logo > img {
+    width: 55vw;
+  }
+  header {
+    height: 80px;
+    padding: 10px;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-top: 0;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+  }
+  nav {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: black;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  nav.active {
+    height: 360px;
+  }
+  nav ul {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+  }
+  nav ul li a {
+    font-size: 6vw;
+    margin-bottom: 12px;
+  }
+}
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #cbdef0;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/main-backrgr.png) no-repeat center center;
+  background-size: cover;
+}
+
+.info {
+  height: 100%;
+  font-size: 4vw;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: right;
+  max-width: 60%;
+  padding-top: 40vh;
+  padding-right: 5%;
+  margin-left: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.motto {
+  margin-left: 10%;
+  color: white;
+  font-size: 3vw;
+  font-weight: 400;
+  width: 80%;
+  height: auto;
+  font-family: spectral sc;
+}
+
+.minskWorld {
+  text-align: left;
+  background-color: white;
+}
+
+.minskWorld > h2, .New-Borovaya > h2 {
+  padding-top: 5%;
+  padding-left: 5%;
+  font-size: 4vw;
+  font-weight: normal;
+}
+
+.minskWorld > p {
+  font-size: 1.6vw;
+  padding-top: 2%;
+  padding-left: 5%;
+  width: 70%;
+  text-align: left;
+}
+
+.img-adv > img, .New-Borovaya > img {
+  margin-top: 2%;
+  width: 100%;
+  padding-left: 10%;
+}
+
+.adv > h3, .New-Borovaya > h3 {
+  height: -moz-min-content;
+  height: min-content;
+  padding-top: 10px;
+  padding-left: 10%;
+  font-size: 1.8vw;
+  font-weight: normal;
+}
+
+.adv-cont {
+  display: flex;
+}
+
+.img-adv {
+  padding-top: 40px;
+  width: 50%;
+  order: 1;
+}
+
+.adv {
+  margin-top: 40px;
+  width: 50%;
+  order: 2;
+}
+
+.advantages {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.advantages .item {
+  flex: 1 0 50%;
+  display: flex;
+  align-items: center;
+  padding: 5% 5%;
+  box-sizing: border-box;
+}
+
+.advantages img {
+  width: 30%;
+  height: auto;
+}
+
+.advantages span {
+  text-align: center;
+  width: 50%;
+  font-size: 1.5vw;
+  margin-left: 5px;
+}
+
+.comfort-env {
+  margin-top: 2vw;
+  font-weight: normal;
+  padding-left: 5%;
+  font-size: 2vw;
+}
+
+.minskWorld > .comfort-env-about {
+  padding-top: 15px;
+  font-size: 1.4vw;
+  width: 90%;
+}
+
+.business-district {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/minskdistrict.png) no-repeat top center;
+  background-size: cover;
+  margin-top: 12vw;
+}
+
+.business-district h3 {
+  font-weight: normal;
+  font-size: 2vw;
+  color: white;
+  padding-left: 10%;
+  padding-top: 8%;
+}
+
+.business-district p {
+  color: white;
+  font-size: 1.5vw;
+  width: 40%;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+
+.New-Borovaya {
+  background-color: white;
+}
+.New-Borovaya > p {
+  font-size: 1.6vw;
+  padding-top: 2%;
+  padding-left: 5%;
+  width: 95%;
+}
+.New-Borovaya .adv-cont .adv {
+  order: 1;
+}
+.New-Borovaya .adv-cont .img-adv {
+  order: 2;
+}
+.New-Borovaya .adv-cont .img-adv img {
+  width: 90%;
+  padding-left: 0;
+}
+
+.newborovaya-district {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 12vw;
+  background: url(../img/newborovayadistrict.png) no-repeat top center;
+  background-size: cover;
+  background-color: black;
+  text-align: center;
+}
+.newborovaya-district p {
+  font-size: 1.5vw;
+  color: white;
+  margin: 0 auto;
+  padding-top: 10vh;
+  width: 70%;
+}
+
+.rev {
+  font-size: 50px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  font-weight: normal;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5vw;
+}
+
+.review {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+.avatar {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px black solid;
+}
+
+.name {
+  margin-top: 6vh;
+  font-size: 2vw;
+  font-weight: normal;
+}
+
+.text {
+  margin: 0 auto;
+  margin-top: 6vh;
+  font-size: 1.6vw;
+  width: 70%;
+}
+
+.minskWorld button {
+  background-color: #0075FF;
+  width: 30vw;
+}
+
+.New-Borovaya button {
+  background-color: #06B32C;
+  width: 30vw;
+}
+
+.New-Borovaya button:hover {
+  background-color: #048023;
+}
+
+@media screen and (max-width: 1024px) {
+  .info {
+    padding-right: 6%;
+    font-size: 4vw;
+    max-width: 70%;
+  }
+  .adv > h3, .New-Borovaya > h3 {
+    height: -moz-min-content;
+    height: min-content;
+    padding-top: 10px;
+    padding-left: 10%;
+    font-size: 3vw;
+    font-weight: normal;
+  }
+  .minskWorld button, .New-Borovaya button {
+    font-size: 1.8vw;
+    padding: 2vw 1vw;
+    width: 30vw;
+  }
+  .advantages {
+    padding-top: 2vw;
+  }
+  .advantages span {
+    font-size: 2.2vw;
+  }
+  .comfort-env {
+    margin-top: 10px;
+    font-size: 3vw;
+  }
+  .minskWorld > .comfort-env-about {
+    font-size: 2.4vw;
+  }
+  .business-district p {
+    font-size: 2.5vw;
+    width: 60%;
+  }
+  .business-district h3 {
+    font-size: 3vw;
+  }
+  .name {
+    margin-top: 3vh;
+  }
+  .text {
+    line-height: 120%;
+    margin-top: 3vh;
+    font-size: 2.5vw;
+  }
+  .minskWorld > h2, .New-Borovaya > h2 {
+    font-size: 5vw;
+  }
+  .minskWorld > p {
+    font-size: 2.5vw;
+  }
+  .New-Borovaya > p {
+    font-size: 2.4vw;
+  }
+  .newborovaya-district > p {
+    width: 80%;
+    padding-left: 0;
+    padding-top: 7vh;
+    font-size: 2.5vw;
+    line-height: 150%;
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    text-align: center;
+    background-color: white;
+  }
+  .main {
+    height: 432px;
+    background-size: auto 442px;
+  }
+  .info {
+    padding-top: 200px;
+    width: 80%;
+  }
+  .motto {
+    font-size: 4vw;
+    margin-top: 0px;
+    margin-left: 14%;
+  }
+  .minskWorld {
+    text-align: center;
+    background-color: white;
+  }
+  .adv-cont {
+    flex-direction: column;
+  }
+  .img-adv {
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .adv {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .New-Borovaya > .adv-cont > .adv {
+    order: 2;
+  }
+  .New-Borovaya > .adv-cont > .img-adv {
+    order: 1;
+  }
+  .minskWorld > h2, .New-Borovaya > h2 {
+    padding-top: 20px;
+    padding-left: 0;
+    font-size: 8vw;
+    font-weight: normal;
+  }
+  .minskWorld > p {
+    font-size: 5vw;
+    padding-top: 7px;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .img-adv > img {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 7px;
+    padding-left: 0;
+  }
+  .adv > h3 {
+    padding-top: 10px;
+    font-size: 6vw;
+    font-weight: normal;
+    padding-left: 0;
+  }
+  .minskWorld > h2,
+  .minskWorld > p,
+  .minskWorld > h3 {
+    text-align: center;
+  }
+  .advantages {
+    max-width: 80%;
+    padding-top: 0;
+  }
+  .advantages img {
+    width: 15vw;
+    height: auto;
+  }
+  .advantages span {
+    width: 45%;
+    font-size: 3.2vw;
+    margin-left: 5px;
+  }
+  .minskWorld button, .New-Borovaya button {
+    width: 80vw;
+    margin-top: 10px;
+    padding: 20px 20px;
+    font-size: 4.5vw;
+  }
+  .minskWorld .comfort-env-about {
+    width: 90%;
+    font-size: 4vw;
+  }
+  .comfort-env {
+    padding-top: 10px;
+    padding-left: 0;
+    font-size: 6vw;
+  }
+  .business-district {
+    margin-top: 20px;
+    height: 490px;
+  }
+  .business-district h3 {
+    text-align: left;
+    font-size: 5vw;
+    padding-top: 30px;
+  }
+  .business-district p {
+    width: 60%;
+    text-align: left;
+    font-size: 3vw;
+    padding-top: 15px;
+  }
+  .New-Borovaya > p {
+    font-size: 4vw;
+    padding-left: 0;
+    padding-top: 25px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .New-Borovaya > img {
+    margin-top: 30px;
+  }
+  .New-Borovaya > .modern-area {
+    font-size: 4vw;
+    line-height: 140%;
+    width: 75%;
+  }
+  .newborovaya-district {
+    text-align: center;
+    margin-top: 20px;
+    height: 400px;
+  }
+  .newborovaya-district > p {
+    padding-top: 20px;
+    line-height: 150%;
+    padding-left: 0;
+    color: white;
+    font-size: 2.5vw;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .review {
+    width: 40%;
+    text-align: center;
+  }
+  .rev {
+    padding-left: 0;
+    font-size: 6vw;
+  }
+  .avatar {
+    width: 22vw;
+    height: 22vw;
+  }
+  .name {
+    font-size: 4vw;
+  }
+  .text {
+    font-size: 3.5vw;
+    line-height: 140%;
+  }
+  .reviews-container {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  background: url(../img/footer.png) no-repeat top center;
+  background-size: cover;
+}
+footer .footer-description {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1vw;
+  color: white;
+  width: 60%;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    height: 120px;
+  }
+  footer .footer-description {
+    font-size: 1.8vw;
+    line-height: 120%;
+  }
+}
+@media screen and (max-width: 450px) {
+  footer {
+    height: 80px;
+  }
+  footer .footer-description {
+    line-height: 150%;
+    font-size: 2.2vw;
+  }
+}
+.minskWorld-sell, .New-Borovaya-sell {
+  width: 100vw;
+  height: 100vw/2.8;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.minskWorld-sell {
+  background-image: url(../img/minskWorld-sell-image.png);
+}
+
+.New-Borovaya-sell {
+  background-image: url(../img/New-Borovaya-sell.png);
+}
+
+.minskWorld-sell-backgroungd, .New-Borovaya-sell-backgroungd {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.minskWorld-sell-backgroungd > h1, .New-Borovaya-sell-backgroungd > h1 {
+  font-weight: normal;
+  font-size: 2.6vw;
+  padding-left: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.outer-rectangle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: calc(26.0416666667vw - 10px);
+  height: calc((26.0416666667vw - 10px) / 1.7);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0 20px;
+  border-radius: 12px;
+}
+
+.inner-rectangle {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-self: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+}
+
+.price {
+  color: #ABFC00;
+  font-size: 1vw;
+  padding: 10px 0px;
+  margin-left: 2vw;
+  border-radius: 50px;
+}
+
+.info-about-flat {
+  display: flex;
+  align-items: center;
+}
+
+.info-about-flat > div {
+  display: block;
+  color: white;
+  font-size: 1vw;
+  padding: 10px 0px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 0.5vw;
+}
+
+.flat-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  color: white;
+  padding: 30px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.5vw;
+  width: 35vw;
+  text-align: center;
+  background-color: #0075FF;
+  margin: 20px auto;
+}
+
+button:hover {
+  background-color: #0053B2;
+}
+
+.button {
+  text-align: center;
+}
+
+.commercial {
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+  display: flex;
+}
+
+.com-text {
+  order: 1;
+  width: 50%;
+  padding-left: 10vw;
+  padding-top: 1.5vw;
+}
+.com-text h1 {
+  padding-top: 10px;
+  font-weight: normal;
+  font-size: 2.2vw;
+}
+.com-text p {
+  margin-top: 30px;
+  font-size: 1.5vw;
+}
+.com-text button {
+  font-size: 1.5vw;
+  margin-top: 3vw;
+  margin-right: 7vw;
+  width: 20vw;
+}
+
+.com-img {
+  order: 2;
+  width: 50%;
+  text-align: center;
+}
+.com-img img {
+  width: 35vw;
+  height: 21vw;
+}
+
+.payment {
+  background-color: #D3EAFF;
+}
+.payment > h1 {
+  font-weight: normal;
+  margin-top: 2vw;
+  margin-left: 8vw;
+  font-size: 2.5vw;
+}
+.payment > p {
+  margin: 3vw 0 5vw 8vw;
+  font-size: 1.5vw;
+  width: 40%;
+}
+
+.content {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.square {
+  position: relative;
+  width: calc(20% - 20px);
+  padding-top: calc(20% - 20px);
+  background: url(../img/payment-rectangle.png) no-repeat center center;
+  background-size: cover;
+  margin: 0 10px 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.square > p {
+  font-size: 1.5vw;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  color: black;
+}
+
+.square .sec {
+  font-size: 4vw;
+  margin-top: 3.5vw;
+}
+
+.request {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.request h1 {
+  margin: 50px 0;
+  font-weight: normal;
+  font-size: 3vw;
+}
+.request button {
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .outer-rectangle {
+    width: 80%;
+    height: 40vw;
+    margin: 20px auto;
+  }
+  .price {
+    font-size: 3vw;
+  }
+  .info-about-flat > div {
+    font-size: 3vw;
+  }
+  button {
+    font-size: 2.5vw;
+  }
+  .com-text h1 {
+    font-size: 2.5vw;
+  }
+  .com-text p {
+    margin-top: 3vw;
+    font-size: 2vw;
+  }
+  .com-text button {
+    padding: 2vw 1vw;
+    font-size: 2vw;
+    width: 40vw;
+  }
+  .com-img {
+    margin-top: 2vw;
+  }
+  .request h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 3.5vw;
+  }
+  .request button {
+    padding: 2.2vw 2vw;
+    margin-top: 20px;
+    width: 80vw;
+    font-size: 4vw;
+  }
+  .payment > h1 {
+    margin-top: 3vw;
+    font-size: 3.5vw;
+  }
+  .payment > p {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .minskWorld-sell-backgroungd > h1, .New-Borovaya-sell-backgroungd > h1 {
+    padding: 0;
+    padding-top: 20px;
+    font-size: 4.5vw;
+  }
+  .content {
+    width: 70%;
+  }
+  .row {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .square {
+    width: calc(40% - 10px);
+    padding-top: calc(40% - 10px);
+  }
+  button {
+    padding: 20px 0;
+    font-size: 3.5vw;
+    width: 60vw;
+  }
+  .commercial {
+    flex-direction: column;
+  }
+  .com-img {
+    order: 1;
+    width: 100%;
+  }
+  .com-img img {
+    width: 66vw;
+    height: 40vw;
+  }
+  .com-text {
+    padding-left: 0;
+    order: 2;
+    width: 100%;
+  }
+  .com-text h1 {
+    margin-top: 20px;
+    font-size: 4.5vw;
+  }
+  .com-text p {
+    font-size: 3.5vw;
+    width: 65%;
+    margin: 20px auto;
+  }
+  .com-text button {
+    margin-top: 20px;
+    margin-right: 0;
+    font-size: 3vw;
+    padding: 4vw 4vw;
+    width: 50vw;
+  }
+  .payment > h1 {
+    font-size: 5vw;
+    margin-left: 0;
+  }
+  .payment > p {
+    margin: 10px auto;
+    font-size: 2.5vw;
+    width: 60%;
+  }
+  .square > p {
+    font-size: 2.5vw;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    color: black;
+  }
+  .square .sec {
+    font-size: 7vw;
+    margin-top: 5.5vw;
+  }
+}
+.catalog-h1 {
+  font-weight: normal;
+  font-size: 3vw;
+  margin-top: 2vw;
+  margin-left: 5vw;
+}
+
+#sortButton {
+  margin-left: 5vw;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #0075FF;
+  padding: 1vw 2vw;
+  font-size: 2vw;
+  width: 20vw;
+}
+
+#sortingDropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 20vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  list-style-type: none;
+  margin-left: 5vw;
+}
+
+#sortingDropdown li {
+  font-size: 2vw;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px black solid;
+}
+
+#sortingDropdown li:hover {
+  background-color: #f1f1f1;
+}
+
+.justflat {
+  display: flex;
+  background-color: #D3EAFF;
+  margin-bottom: 50px;
+  border-radius: 12px;
+}
+
+.catalog-items {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 0 auto;
+}
+
+.justflat > .outer-rectangle {
+  width: 50vw;
+  height: 25vw;
+  margin: 0;
+}
+
+.justflat > .outer-rectangle > .inner-rectangle .price {
+  font-size: 2vw;
+}
+.justflat > .outer-rectangle > .inner-rectangle .info-about-flat > div {
+  font-size: 2vw;
+}
+
+.flat-description {
+  width: 50%;
+}
+.flat-description h1 {
+  font-size: 2vw;
+  margin-top: 3vw;
+  margin-left: 3vw;
+}
+.flat-description p {
+  font-size: 1.5vw;
+  margin-top: 2vw;
+  margin-left: 3vw;
+  width: 80%;
+}
+
+.page-numbers {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin-right: 4.5vw;
+  margin-bottom: 30px;
+}
+
+.page-numbers li {
+  font-size: 1.5vw;
+  margin: 0 0.5vw;
+  padding: 1vw 1.5vw;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.page-numbers li.current {
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1024px) {
+  .flat-description p {
+    margin-top: 0.5vw;
+    font-size: 1.7vw;
+  }
+  .justflat {
+    margin-bottom: 5vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .justflat {
+    flex-direction: column;
+  }
+  .justflat > .outer-rectangle {
+    width: 100%;
+    height: 50vw;
+    margin: 0;
+  }
+  .catalog-main {
+    text-align: left;
+  }
+  .catalog-h1 {
+    font-size: 6vw;
+  }
+  .justflat > .outer-rectangle > .inner-rectangle .price {
+    font-size: 4vw;
+  }
+  .justflat > .outer-rectangle > .inner-rectangle .info-about-flat > div {
+    font-size: 4vw;
+  }
+  .flat-description {
+    width: 100%;
+  }
+  .flat-description h1 {
+    font-size: 3.5vw;
+  }
+  .flat-description p {
+    font-size: 3vw;
+    padding-bottom: 20px;
+  }
+  .page-numbers {
+    margin-bottom: 20px;
+  }
+  .page-numbers li {
+    font-size: 4vw;
+    margin: 0 1vw;
+    padding: 1.5vw 2.5vw;
+  }
+  #sortButton {
+    padding: 3vw 2vw;
+    font-size: 3vw;
+    width: 40vw;
+    margin-top: 10px;
+  }
+  #sortingDropdown {
+    width: 40vw;
+  }
+  #sortingDropdown li {
+    font-size: 3vw;
+  }
+}
+.main-about {
+  background-color: #D3EAFF;
+}
+
+.main-about-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-about-cont .about-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto;
+}
+.main-about-cont .about-cont h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 3vw;
+}
+.main-about-cont .about-cont .about-info {
+  display: flex;
+  margin-top: 20px;
+}
+.main-about-cont .about-cont .about-info .about-img {
+  width: 55%;
+  text-align: center;
+}
+.main-about-cont .about-cont .about-info .about-img img {
+  width: 45vw;
+  height: 25vw;
+}
+.main-about-cont .about-cont .about-info .about-text {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-about-cont .about-cont .about-info .about-text p {
+  width: 80%;
+  font-size: 1.5vw;
+}
+
+.about-cont:nth-child(even) .about-img {
+  order: 2;
+}
+
+.about-cont:nth-child(even) .about-text {
+  order: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-about-cont .about-cont .about-info .about-text p {
+    line-height: 130%;
+    font-size: 2vw;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about-cont:nth-child(even) .about-img {
+    order: 1;
+  }
+  .about-cont:nth-child(even) .about-text {
+    order: 2;
+  }
+  .main-about-cont .about-cont h3 {
+    font-size: 5vw;
+  }
+  .main-about-cont .about-cont .about-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-about-cont .about-cont .about-info .about-img {
+    width: 90%;
+  }
+  .main-about-cont .about-cont .about-info .about-img img {
+    width: 80vw;
+    height: 45vw;
+  }
+  .main-about-cont .about-cont .about-info .about-text {
+    width: 100%;
+  }
+  .main-about-cont .about-cont .about-info .about-text p {
+    margin-top: 10px;
+    line-height: 150%;
+    font-size: 3vw;
+  }
+}
+@font-face {
+  font-family: lato;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: spectral sc;
+  src: url(../fonts/SpectralSC-Regular.ttf);
+}

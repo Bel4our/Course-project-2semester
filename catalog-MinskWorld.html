@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="not-main">
+      <div class="logo">
+        <img src="img/logo.svg">
+       </div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a>Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="catalog-main">
+       <h1 class="catalog-h1">Купить квартиру в Минск Мире</h1>
+       <div class="sorting-container">
+        <button id="sortButton" onclick="toggleDropdown()">Сортировать по</button>
+        <ul id="sortingDropdown">
+            <li onclick="sortList('ascending')">По возрастанию цены</li>
+            <li onclick="sortList('descending')">По убыванию цены</li>
+        </ul>
+    </div>
+    <div class="catalog-items" id="flatsContainer">
+      
+      </div>
+      <ul class="page-numbers">
+        <li class="current">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+      
+      </main>
+      <footer>
+        <p class="footer-description">
+           © 2024 Все права защищены. Crown of Comfort.<br>
+           Адрес: ул. Толстого 10, Минск, Беларусь<br>
+            Телефон: +375 (29) 123-45-67<br>
+             Email: info@crownofcomfort.com
+            </p>
+      </footer>
+      <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script> 
+      <script src="script.js"></script>
+</body>
+</html>

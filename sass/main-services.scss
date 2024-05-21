@@ -1,0 +1,351 @@
+.minskWorld-sell, .New-Borovaya-sell{
+    width: 100vw;
+    height: 100vw / 2.8;
+    background-repeat:  no-repeat;
+    background-position:  center center;
+    background-size: cover;
+}
+
+.minskWorld-sell{
+    background-image: url(../img/minskWorld-sell-image.png);
+}
+.New-Borovaya-sell{
+    background-image: url(../img/New-Borovaya-sell.png);
+}
+
+.minskWorld-sell-backgroungd, .New-Borovaya-sell-backgroungd{
+   
+    background-color: rgba(255, 255, 255, 0.85); 
+    
+}
+
+.minskWorld-sell-backgroungd>h1, .New-Borovaya-sell-backgroungd>h1{
+    font-weight: normal;
+    font-size: 2.6vw;
+    padding-left: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+
+.outer-rectangle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: calc(100vw/3.84 - 10px); 
+    height: calc((100vw / 3.84 - 10px) / 1.7); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 12px;
+}
+.inner-rectangle{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0,0,0, 0.5);
+    align-self: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 12px 12px;
+}
+
+.price{
+    color: #ABFC00;
+    font-size: 1vw;
+    padding: 10px 0px;
+    margin-left: 2vw;
+    border-radius: 50px;
+}
+
+.info-about-flat{
+    display: flex;
+    align-items: center;
+}
+
+.info-about-flat>div{
+    display: block;
+    color: white;
+    font-size: 1vw;
+    padding: 10px 0px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 0.5vw;
+}
+
+
+.flat-container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    width: 90%;
+    margin: 0 auto;
+}
+
+ button{
+    color: white;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.5vw;
+    width: 35vw;
+    text-align: center;
+    background-color: #0075FF;
+    margin: 20px auto;
+ }
+
+ button:hover{
+    background-color: #0053B2; 
+}
+
+ .button{
+    text-align: center;
+ }
+
+ 
+//------------------------------------------------
+
+.commercial{
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    display: flex;
+}
+
+.com-text{
+    order: 1;
+    width: 50%;
+    padding-left: 10vw;
+    padding-top: 1.5vw;
+    h1{
+        padding-top: 10px;
+        font-weight: normal;
+        font-size: 2.2vw;
+    }
+
+    p{
+        margin-top: 30px;
+        font-size: 1.5vw;
+    }
+
+    button{
+        font-size: 1.5vw;
+        margin-top: 3vw;
+        margin-right: 7vw;
+        width: 20vw;
+    }
+}
+
+.com-img{
+    order: 2;
+    width: 50%;
+    text-align: center;
+    img{
+        width: 35vw;
+        height: 21vw;
+    }
+}
+
+.payment{
+    background-color: #D3EAFF;
+    >h1{
+        font-weight: normal;
+        margin-top: 2vw;
+        margin-left: 8vw;
+        font-size: 2.5vw;
+    }
+    >p{
+        margin: 3vw 0 5vw 8vw;
+        font-size: 1.5vw;
+        width: 40%;
+    }
+}
+
+.content{
+    margin: 0 auto;
+    width: 80%;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+.square {
+    position: relative;
+    width: calc(20% - 20px);
+    padding-top: calc(20% - 20px);
+    background: url(../img/payment-rectangle.png) no-repeat center center;
+    background-size: cover;
+    margin: 0 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.square > p {
+    font-size: 1.5vw;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    color: black;
+}
+
+.square .sec {
+    font-size: 4vw; 
+    margin-top: 3.5vw; 
+}
+
+
+
+.request{
+    text-align: center;
+    h1{
+        margin: 50px 0;
+        font-weight: normal;
+        font-size: 3vw;
+    }
+    button{
+        font-size: 2vw;
+    }
+   margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .outer-rectangle {
+        width: 80%; 
+        height: 40vw;
+        margin: 20px auto;
+    }
+    .price{
+        font-size: 3vw;
+    }
+    .info-about-flat>div{
+        font-size: 3vw;
+    }
+    button{
+        font-size: 2.5vw;
+    }
+    .com-text{
+        h1{
+            font-size: 2.5vw;
+        }
+        p{
+            margin-top: 3vw;
+            font-size:  2vw;
+        }
+        button{
+            padding: 2vw 1vw;
+            font-size: 2vw;
+            width: 40vw;
+        }
+    }
+    .com-img{
+        margin-top: 2vw;
+    }
+
+    .request{
+        h1{
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-size: 3.5vw;
+        }
+        button{
+            padding: 2.2vw 2vw;
+            margin-top: 20px;
+            width: 80vw;
+            font-size: 4vw;
+        }
+    }
+
+    .payment > h1{
+        margin-top: 3vw;
+        font-size: 3.5vw;
+    }
+    .payment > p{
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .minskWorld-sell-backgroungd>h1, .New-Borovaya-sell-backgroungd>h1{
+       padding: 0;
+       padding-top: 20px;
+       font-size: 4.5vw;
+    }
+    .content{
+        width: 70%;
+    }
+    .row {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .square {
+        width: calc(40% - 10px); 
+        padding-top: calc(40% - 10px);
+    } 
+    button{
+        padding: 20px 0;
+        font-size: 3.5vw;
+        width: 60vw;
+    }
+    .commercial{
+        flex-direction: column;
+      }
+      .com-img{
+        order: 1;
+        width: 100%;
+        img{
+            width: 66vw;
+            height: 40vw;
+        }
+      }
+      .com-text{
+        padding-left: 0;
+        order: 2;
+        width: 100%;
+        h1{
+            margin-top: 20px;
+            font-size: 4.5vw;
+        }
+        p{
+            font-size: 3.5vw;
+            width: 65%;
+            margin: 20px auto;
+        }
+        button{
+            margin-top: 20px;
+            margin-right: 0;
+            font-size: 3vw;
+            padding: 4vw 4vw;
+            width: 50vw;
+        }
+      }
+      .payment{
+        >h1{
+            font-size: 5vw;
+            margin-left: 0;
+        }
+        >p{
+            margin: 10px auto;
+            font-size: 2.5vw;
+            width: 60%;
+        }
+      }
+      .square > p {
+        font-size: 2.5vw;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        color: black;
+    }
+    
+    .square .sec {
+        font-size: 7vw;
+        margin-top: 5.5vw; 
+    }
+}

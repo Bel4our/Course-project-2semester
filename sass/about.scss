@@ -1,0 +1,107 @@
+.main-about{
+    background-color: #D3EAFF;
+}
+.main-about-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .about-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 20px auto;
+        h3{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 3vw;
+        }
+        .about-info{
+            display: flex;
+            margin-top: 20px;
+            .about-img{
+                width: 55%;
+                text-align: center;
+                img{    
+                    width: 45vw;
+                    height: 25vw;
+                }
+            }
+            .about-text{
+                width: 45%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    width: 80%;
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
+}
+
+
+.about-cont:nth-child(even) .about-img {
+    order: 2;
+}
+
+.about-cont:nth-child(even) .about-text {
+    order: 1;
+}
+
+@media screen and (max-width: 1024px){
+   
+    .main-about-cont{
+         .about-cont{
+             .about-info{
+                 .about-text p{
+                    line-height: 130%;
+                    font-size: 2vw;
+                    width: 90%;
+                 }
+               }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    
+    .about-cont:nth-child(even) .about-img {
+        order: 1;
+    }
+    
+    .about-cont:nth-child(even) .about-text {
+        order: 2;
+    }
+    .main-about-cont{
+        .about-cont{
+
+            h3{
+                font-size: 5vw;
+            }
+            .about-info{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .about-img{
+                    width: 90%;
+                    img{    
+                        width: 80vw;
+                        height: 45vw;
+                    }
+                }
+                .about-text
+                { 
+                    width: 100%;
+                     p{
+                        margin-top: 10px; 
+                        line-height: 150%;
+                        font-size: 3vw;
+                      }
+                }
+              }
+       }
+   }
+}

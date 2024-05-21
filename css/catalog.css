@@ -1,0 +1,162 @@
+.catalog-h1 {
+  font-weight: normal;
+  font-size: 3vw;
+  margin-top: 2vw;
+  margin-left: 5vw;
+}
+
+#sortButton {
+  margin-left: 5vw;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #0075FF;
+  padding: 1vw 2vw;
+  font-size: 2vw;
+  width: 20vw;
+}
+
+#sortingDropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 20vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  list-style-type: none;
+  margin-left: 5vw;
+}
+
+#sortingDropdown li {
+  font-size: 2vw;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px black solid;
+}
+
+#sortingDropdown li:hover {
+  background-color: #f1f1f1;
+}
+
+.justflat {
+  display: flex;
+  background-color: #D3EAFF;
+  margin-bottom: 50px;
+  border-radius: 12px;
+}
+
+.catalog-items {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 0 auto;
+}
+
+.justflat > .outer-rectangle {
+  width: 50vw;
+  height: 25vw;
+  margin: 0;
+}
+
+.justflat > .outer-rectangle > .inner-rectangle .price {
+  font-size: 2vw;
+}
+.justflat > .outer-rectangle > .inner-rectangle .info-about-flat > div {
+  font-size: 2vw;
+}
+
+.flat-description {
+  width: 50%;
+}
+.flat-description h1 {
+  font-size: 2vw;
+  margin-top: 3vw;
+  margin-left: 3vw;
+}
+.flat-description p {
+  font-size: 1.5vw;
+  margin-top: 2vw;
+  margin-left: 3vw;
+  width: 80%;
+}
+
+.page-numbers {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin-right: 4.5vw;
+  margin-bottom: 30px;
+}
+
+.page-numbers li {
+  font-size: 1.5vw;
+  margin: 0 0.5vw;
+  padding: 1vw 1.5vw;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.page-numbers li.current {
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1024px) {
+  .flat-description p {
+    margin-top: 0.5vw;
+    font-size: 1.7vw;
+  }
+  .justflat {
+    margin-bottom: 5vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .justflat {
+    flex-direction: column;
+  }
+  .justflat > .outer-rectangle {
+    width: 100%;
+    height: 50vw;
+    margin: 0;
+  }
+  .catalog-main {
+    text-align: left;
+  }
+  .catalog-h1 {
+    font-size: 6vw;
+  }
+  .justflat > .outer-rectangle > .inner-rectangle .price {
+    font-size: 4vw;
+  }
+  .justflat > .outer-rectangle > .inner-rectangle .info-about-flat > div {
+    font-size: 4vw;
+  }
+  .flat-description {
+    width: 100%;
+  }
+  .flat-description h1 {
+    font-size: 3.5vw;
+  }
+  .flat-description p {
+    font-size: 3vw;
+    padding-bottom: 20px;
+  }
+  .page-numbers {
+    margin-bottom: 20px;
+  }
+  .page-numbers li {
+    font-size: 4vw;
+    margin: 0 1vw;
+    padding: 1.5vw 2.5vw;
+  }
+  #sortButton {
+    padding: 3vw 2vw;
+    font-size: 3vw;
+    width: 40vw;
+    margin-top: 10px;
+  }
+  #sortingDropdown {
+    width: 40vw;
+  }
+  #sortingDropdown li {
+    font-size: 3vw;
+  }
+}
